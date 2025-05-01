@@ -3,7 +3,7 @@ Affinity adjustment for ⛅ **Sky: Children of the Light** on AMD Ryzen 1000/200
 
 # How to use?
 👇 👇 👇 👇 👇
-- 🧮 Make sure your processor is a subjet of this, [i.e. AMD Ryzen with "core config" is "2 × something"](https://en.wikipedia.org/wiki/List_of_AMD_Ryzen_processors).
+- 🧮 Make sure your processor is a subject of this, [i.e. AMD Ryzen with "core config" is "2 × something"](https://en.wikipedia.org/wiki/List_of_AMD_Ryzen_processors).
 - 🔗 Go to [Releases page](https://github.com/kawashirov/sky_affinity/releases) on the right
 - 📦 Download `sky_affinity.exe`
 - ⌨ Press `Win+R`, type `shell:startup` and run it.
