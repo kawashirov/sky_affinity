@@ -16,7 +16,7 @@ Affinity adjustment for ⛅ **Sky: Children of the Light** on AMD Ryzen 1000/200
 
 
 # Technical information
-Rean below only if you are nerd ☝🤓
+Read below only if you are nerd ☝🤓
 
 ### How does it work?
 It passively monitors whether `Sky.exe` is running and ensures its CPU affinity is set to the **second half of threads**.
