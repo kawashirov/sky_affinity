@@ -9,8 +9,21 @@ Affinity adjustment for ⛅ **Sky: Children of the Light** on AMD Ryzen 1000/200
 - 📂 Your system users' auto Startup folder should open.
 - 📦 Put `sky_affinity.exe` into this folder (you might not see `.exe` part if file extensions are hidden by your explorer settings, but that's OK).
 - 🏃‍♀️ Next and each other time you log into the system, `sky_affinity.exe` will start and run in background.
-- 🏃‍♂️ Run `sky_affinity.exe`, and it will run in background immediatly, no restart required.
-- 🖥 A console window might flash for a moment, but that's OK.
+- 🏃‍♂️ Run `sky_affinity.exe`, and it will run immediatly, no restart required.
+- 🖥 A console window might flash for a moment, but that's OK. ⚠ If you use **Windows Terminal**, then `sky_affinity.exe` will open there and **WILL NOT** run in background. 🤷‍♂️
+
+👆 👆 👆 👆 👆
+
+# Как этим пользоваться?
+👇 👇 👇 👇 👇
+- 🔗 Перейдите на [страницу Releases](https://github.com/kawashirov/sky_affinity/releases) справа.
+- 📦 Скачайте `sky_affinity.exe`
+- ⌨ Нажмите `Win+R`, вставьте `shell:startup` и запустите.
+- 📂 Должна открыться папка Startup автозапуска вашего пользователя системы.
+- 📦 Закиньте `sky_affinity.exe` в эту папку (вы можете не видеть `.exe` если у вас в настроках проводника выключено отображение расширений, но это нормально).
+- 🏃‍♀️ При следующем запуске системы `sky_affinity.exe` автоматически запустится и будет работать в фоне.
+- 🏃‍♂️ Можете запустить `sky_affinity.exe` прямо сейчас, тогда вам не придется перезагружаться.
+- 🖥 Может мигнуть консольное окно, но это нормально. ⚠ Если вы используете **Windows Terminal**, то `sky_affinity.exe` откроется в нём и **НЕ БУДЕТ** работать в фоне. 🤷‍♂️
 
 👆 👆 👆 👆 👆
 
@@ -42,6 +55,7 @@ Tested and confirmed on AMD Ryzen 2600 CPU.
 - If you run another instance of `sky_affinity.exe` it will kill already running one.
 - You might see there is actually two copies of `sky_affinity.exe` is running. That's OK. That's overhead of [Nuitka](https://nuitka.net/): one is the lanucher other is the program itself.
 - If `sky_affinity.exe` can't be run for some reason, try to run it trough `cmd.exe` (console), there is should be more verbose errors.
+- If you use **Windows Terminal**, Nuitka fails to hide console window, so new tab will be spawned and lasts all the user session. 🤷‍♂️ Not really want to make workaround for that lmao.
 
 ### How to remove?
 - Go to Task Manager (press `Ctrl+Shift+Esc`).
