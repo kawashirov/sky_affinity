@@ -150,9 +150,12 @@ class Main():
 		# print(f"Found sky.exe: {process}")
 
 		cur_affinity = process.cpu_affinity()
-		if cur_affinity != self.sky_affinity:
-			print(f"Changing {process} affinity: {cur_affinity} -> {self.sky_affinity}")
-			process.cpu_affinity(self.sky_affinity)
+		# Force set affinity every time without check. It works better, idk why.
+		# Sometimes Sky swaps into something like single-threaded mode, and (re)setting affinity everytime,
+		# leads it to make a decision to swap into something like two-threaded mode, it seems, not sure.
+		# if cur_affinity != self.sky_affinity:
+		print(f"Changing {process} affinity: {cur_affinity} -> {self.sky_affinity}")
+		process.cpu_affinity(self.sky_affinity)
 
 	def try_process_loop(self):
 		while True:
