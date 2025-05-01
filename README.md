@@ -5,9 +5,9 @@ Affinity adjustment for ⛅ **Sky: Children of the Light** on Ryzen 1000/2000/30
 - Go to [Releases page](https://github.com/kawashirov/sky_affinity/releases) on the right
 - Download `sky_affinity.exe`
 - Press `Win+R`, type `shell:startup` and run it.
-- Your System Users' auto Startup folder should open
-- Put `sky_affinity.exe` into this folder (you might not see `.exe` part if file extensions are hidden by your explorer settings, but that's OK)
-- Next time you log into the system, `sky_affinity.exe` will start and run in background
+- Your system users' auto Startup folder should open.
+- Put `sky_affinity.exe` into this folder (you might not see `.exe` part if file extensions are hidden by your explorer settings, but that's OK).
+- Next and each other time you log into the system, `sky_affinity.exe` will start and run in background.
 - Run `sky_affinity.exe`, and it will run in background immediatly, no restart required.
 - A console window might flash for a moment, but that's OK.
 
@@ -42,8 +42,10 @@ So, we are locking the game into last half of cores, which usually belong to one
 See [core-to-core-latency project page](https://github.com/andportnoy/core-to-core-latency) for more info and use cases. You can measure delays by yourself! 
 
 ### How to remove?
+- Go to Task Manager (press `Ctrl+Shift+Esc`).
 - Kill all instances of `sky_affinity.exe` in Task Manager.
-- Remove `sky_affinity.exe` from `shell:startup` folder.
+- Open Starup folder (press `Win+R` and run `shell:startup`).
+- Remove `sky_affinity.exe` from Startup folder.
 
 
 Have a nice day! 💐
