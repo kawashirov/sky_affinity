@@ -5,7 +5,7 @@ import time
 import datetime
 
 if __name__ == '__main__':
-	APP_VERSION = "0.1.0.0"
+	APP_VERSION = "0.1.0.1"
 	APP_NAME="sky_affinity"
 
 	url = 'https://github.com/kawashirov/'
