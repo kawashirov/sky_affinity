@@ -18,12 +18,13 @@ The Windows scheduler should handle the rest.
 Preferring second half over first half as some other software likes to bind itself to the first core for some reason.
 
 ### Why does this work?
-On some older generation AMD Ryzen CPUs (mostly 1000/2000/3000 series) there is some latency when communicating accross some cores.
+On some older generation AMD Ryzen CPUs (mostly 1000/2000/3000 series) there is some latency when communicating across some cores.
 This is because there are actually two "chips" under the hood and communicating across those "chips" is slower than within a single.
+The game or Windows scheduler (not sure who exactly) can split its threads to differint "chips", which causes slowdowns and stutters some times.
 **Sky: Children of the Light** isn't performance-heavy and runs fine on 2-4 cores.
 So, we are locking the game into last half of cores, which usually belong to one "chip".
-**This fixes some stutters and lags on some systems.**
-See [core-to-core-latency project page](https://github.com/andportnoy/core-to-core-latency) for more info and use cases. You can measure delays by yourself!
+**This fixes stutters and lags on some systems.**
+See [core-to-core-latency project page](https://github.com/nviennot/core-to-core-latency) for more info and use cases. You can measure delays by yourself!
 Tested and confirmed on AMD Ryzen 2600 CPU.
 
 ### Notes
