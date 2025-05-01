@@ -2,14 +2,21 @@
 Affinity adjustment for ⛅ **Sky: Children of the Light** on AMD Ryzen 1000/2000/3000 CPUs
 
 # How to use?
-- Go to [Releases page](https://github.com/kawashirov/sky_affinity/releases) on the right
-- Download `sky_affinity.exe`
-- Press `Win+R`, type `shell:startup` and run it.
-- Your system users' auto Startup folder should open.
-- Put `sky_affinity.exe` into this folder (you might not see `.exe` part if file extensions are hidden by your explorer settings, but that's OK).
-- Next and each other time you log into the system, `sky_affinity.exe` will start and run in background.
-- Run `sky_affinity.exe`, and it will run in background immediatly, no restart required.
-- A console window might flash for a moment, but that's OK.
+👇 👇 👇 👇 👇
+- 🔗 Go to [Releases page](https://github.com/kawashirov/sky_affinity/releases) on the right
+- 📦 Download `sky_affinity.exe`
+- ⌨ Press `Win+R`, type `shell:startup` and run it.
+- 📂 Your system users' auto Startup folder should open.
+- 📦 Put `sky_affinity.exe` into this folder (you might not see `.exe` part if file extensions are hidden by your explorer settings, but that's OK).
+- 🏃‍♀️ Next and each other time you log into the system, `sky_affinity.exe` will start and run in background.
+- 🏃‍♂️ Run `sky_affinity.exe`, and it will run in background immediatly, no restart required.
+- 🖥 A console window might flash for a moment, but that's OK.
+
+👆 👆 👆 👆 👆
+
+
+# Technical information
+Rean below only if you are nerd ☝🤓
 
 ### How does it work?
 It passively monitors whether `Sky.exe` is running and ensures its CPU affinity is set to the **second half of threads**.
